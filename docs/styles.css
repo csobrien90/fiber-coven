@@ -19,6 +19,7 @@ Yellow #cb9404
 header {
     margin-top: 5%;
     height: fit-content;
+    position: relative;
 }
 
 nav ul li, #social-media ul li {
@@ -33,7 +34,6 @@ nav li, #social-media li {
     font-size: 6vw;
     display: block;
     width: 30%;
-    height: 8vw;
 }
 
 nav a, #social-media a {
@@ -44,20 +44,16 @@ nav a:hover, #social-media a:hover {
     border-bottom: 3px solid white;
 }
 
-#social-media {
-}
-
 main {
     margin: 40px 10px;
 }
 
 .content-box {
     display: block;
-    width: 90%;
-    height: 400px;
+    width: 96%;
     border: 2px solid #cb9404;
     border-radius: 10%;
-    padding: 20px;
+    padding: 2em;
     margin: 20px auto;
 }
 
@@ -67,9 +63,13 @@ img {
 
 footer {
     text-align: center;
+    margin: 20px;
 }
 
 /* Media Queries */
+
+@media screen and (min-width: 600px) {
+}
 
 @media screen and (min-width: 1000px) {
     #logo {
@@ -77,7 +77,32 @@ footer {
         max-width: 33%;
         margin: 0 auto;
     } 
+
+    header {
+        margin-top: 0;
+    }
     
+    nav, #social-media {
+        position: absolute;
+        top: 40%;
+        width: 33%;
+    }
+
+    nav {
+        left: 0;
+    }
+
+    #social-media {
+        right: 0;
+    }
+
+    nav li, #social-media li {
+        font-size: 3vw;
+        display: block;
+        width: fit-content;
+        margin: 10px 10px;
+    }
+
     .content-box {
         display: inline-block;
         vertical-align: top;
@@ -86,13 +111,5 @@ footer {
         border-radius: 10%;
         padding: 20px;
         margin: 0 20px;
-    }
-
-    nav {
-        float: left;
-    }
-    
-    #social-media {
-        float: right;
     }
 }
