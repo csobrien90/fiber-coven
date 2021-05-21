@@ -1,3 +1,12 @@
+/* 
+Style Colors
+
+Black
+White
+Yellow #cb9404
+*/
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,19 +17,34 @@
 }
 
 header {
-    height: 4em;
+    margin-top: 5%;
+    height: fit-content;
 }
 
-header ul li {
+nav ul li, #social-media ul li {
     display: inline-block;
 }
 
-nav {
-    float: left;
+nav, #social-media {
+    text-align: center;
+}
+
+nav li, #social-media li {
+    font-size: 6vw;
+    display: block;
+    width: 30%;
+    height: 8vw;
+}
+
+nav a, #social-media a {
+    text-decoration: none;
+}
+
+nav a:hover, #social-media a:hover {
+    border-bottom: 3px solid white;
 }
 
 #social-media {
-    float: right;
 }
 
 main {
@@ -31,8 +55,8 @@ main {
     display: block;
     width: 90%;
     height: 400px;
+    border: 2px solid #cb9404;
     border-radius: 10%;
-    box-shadow: 0 0 5px 5px white;
     padding: 20px;
     margin: 20px auto;
 }
@@ -48,14 +72,27 @@ footer {
 /* Media Queries */
 
 @media screen and (min-width: 1000px) {
+    #logo {
+        display: block;
+        max-width: 33%;
+        margin: 0 auto;
+    } 
+    
     .content-box {
         display: inline-block;
         vertical-align: top;
         width: 30%;
         height: 400px;
         border-radius: 10%;
-        box-shadow: 0 0 5px 5px white;
         padding: 20px;
         margin: 0 20px;
+    }
+
+    nav {
+        float: left;
+    }
+    
+    #social-media {
+        float: right;
     }
 }
