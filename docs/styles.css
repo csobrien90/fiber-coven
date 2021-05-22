@@ -6,6 +6,10 @@ White
 Yellow #cb9404
 */
 
+@font-face {
+    font-family: Eccentric;
+    src: url(fonts/eccentric.otf);
+}
 
 * {
     box-sizing: border-box;
@@ -14,6 +18,7 @@ Yellow #cb9404
     list-style: none;
     background-color: black;
     color: white;
+    font-family: Eccentric, 'Times New Roman', Times, serif;
 }
 
 header {
@@ -31,7 +36,7 @@ nav, #social-media {
 }
 
 nav li, #social-media li {
-    font-size: 6vw;
+    font-size: 7vw;
     display: block;
     width: 30%;
 }
@@ -46,9 +51,11 @@ nav a:hover, #social-media a:hover {
 
 main {
     margin: 40px 10px;
+    text-align: center;
 }
 
 .content-box {
+    text-align: left;
     display: block;
     width: 96%;
     border: 2px solid #cb9404;
@@ -74,7 +81,7 @@ footer {
 @media screen and (min-width: 1000px) {
     #logo {
         display: block;
-        max-width: 33%;
+        max-width: 20%;
         margin: 0 auto;
     } 
 
@@ -85,7 +92,7 @@ footer {
     nav, #social-media {
         position: absolute;
         top: 40%;
-        width: 33%;
+        width: 40%;
     }
 
     nav {
@@ -100,7 +107,7 @@ footer {
         font-size: 3vw;
         display: block;
         width: fit-content;
-        margin: 10px 10px;
+        margin: 10px 20px;
     }
 
     .content-box {
@@ -110,6 +117,6 @@ footer {
         height: 400px;
         border-radius: 10%;
         padding: 20px;
-        margin: 0 20px;
+        margin: 0 10px;
     }
 }
