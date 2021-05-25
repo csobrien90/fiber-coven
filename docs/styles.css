@@ -21,6 +21,11 @@ Yellow #cb9404
     font-family: Eccentric, 'Times New Roman', Times, serif;
 }
 
+h1 {
+    width: fit-content;
+    margin: 0 auto;
+}
+
 header {
     margin-top: 5%;
     height: fit-content;
@@ -54,18 +59,23 @@ nav a:hover, #social-media a:hover {
 }
 
 main {
-    margin: 40px 10px;
+    display: flex;
     text-align: center;
+    flex-wrap: wrap;
+    margin-top: 2em;
 }
 
 .content-box {
+    flex-grow: 1;
+    flex-direction: column;
     text-align: left;
     display: block;
     width: 96%;
     border: 2px solid #cb9404;
     border-radius: 10%;
     padding: 2em;
-    margin: 20px auto;
+    margin: 5px 10px;
+    flex-basis: 320px;
 }
 
 .content-box h1 {
@@ -84,7 +94,7 @@ footer {
 
 /* Media Queries */
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 570px) {
 }
 
 @media screen and (min-width: 1000px) {
@@ -121,15 +131,14 @@ footer {
     #wrapper {
         min-height: calc(100vh - 59.4px);
     }
-    main {
-        display: flex;
-    }
     .content-box {
+        flex-direction: row;
         flex: 1;
         vertical-align: top;
         width: 30%;
         border-radius: 10%;
         padding: 20px;
-        margin: 0 10px;
+        margin: 5px;
+        flex-basis: 400px;
     }
 }
