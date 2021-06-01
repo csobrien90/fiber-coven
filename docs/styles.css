@@ -83,6 +83,10 @@ main {
     margin-bottom: 1em;
 }
 
+.content-box p {
+    font-family: serif;
+}
+
 img {
     max-width: 100%;
 }
