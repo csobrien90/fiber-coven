@@ -85,6 +85,8 @@ main {
 
 .content-box p {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 94%;
+    margin: 0 auto;
 }
 
 img {
@@ -165,7 +167,7 @@ iframe {
         vertical-align: top;
         width: 30%;
         border-radius: 10%;
-        padding: 20px;
+        padding: 20px 20px 40px;
         margin: 5px;
         flex-basis: 400px;
         font-size: 1.2em;
@@ -182,13 +184,12 @@ iframe {
 
     #emily {
         float: left;
-        margin-right: 20px;
-        margin-bottom: 0;
+        margin: 0 20px;
     }
     
     #lauren {
         float: right;
-        margin: 40px 0 0 20px;
+        margin: 40px 20px 0 20px;
     }
 
     .bio p:last-child, .bio img:last-child {
