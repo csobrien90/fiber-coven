@@ -46,12 +46,21 @@ nav li, #social-media li {
     width: 30%;
 }
 
+#social-media img {
+    max-height: 3em;
+}
+
 nav a, #social-media a {
     text-decoration: none;
 }
 
-nav a:hover, #social-media a:hover {
+nav a:hover {
     border-bottom: 3px solid white;
+}
+
+#social-media img:hover {
+    filter: invert(1);
+    border-radius: 50%;
 }
 
 #logo {
@@ -136,12 +145,12 @@ iframe {
 
     header {
         margin-top: 0;
+        display: flex;
+        align-items: center;
     }
     
     nav, #social-media {
-        position: absolute;
-        top: 40%;
-        width: 40%;
+        flex: 1;
     }
 
     nav {
@@ -166,7 +175,7 @@ iframe {
         flex: 1;
         vertical-align: top;
         width: 30%;
-        border-radius: 10%;
+        border-radius: 6%;
         padding: 20px 20px 40px;
         margin: 5px;
         flex-basis: 400px;
@@ -184,7 +193,7 @@ iframe {
 
     #emily {
         float: left;
-        margin: 0 20px;
+        margin: 0 20px; 
     }
     
     #lauren {
