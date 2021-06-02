@@ -76,10 +76,10 @@ main {
     padding: 2em;
     margin: 5px 10px;
     flex-basis: 320px;
+    text-align: center;
 }
 
 .content-box h1 {
-    text-align: center;
     margin-bottom: 1em;
 }
 
@@ -91,9 +91,33 @@ img {
     max-width: 100%;
 }
 
+.bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bio img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 1.5em;
+}
+
+#lauren {
+    margin-top: 3em;
+}
+
 footer {
     text-align: center;
     margin: 20px;
+}
+
+iframe {
+    margin: 2em 0;
+}
+
+#news img {
+    margin-bottom: 2em;
 }
 
 /* Media Queries */
@@ -144,5 +168,30 @@ footer {
         padding: 20px;
         margin: 5px;
         flex-basis: 400px;
+        font-size: 1.2em;
+    }
+    .bio {
+        display: unset;
+        text-align: justify;
+    }
+    
+    .bio img {
+        width: 160px;
+        height: 160px;
+    }
+
+    #emily {
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+    
+    #lauren {
+        float: right;
+        margin: 40px 0 0 20px;
+    }
+
+    .bio p:last-child, .bio img:last-child {
+        margin-top: 40px;
     }
 }
