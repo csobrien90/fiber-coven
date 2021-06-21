@@ -153,6 +153,8 @@ iframe {
 .card-front {
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
 }
 
 .card-back {
