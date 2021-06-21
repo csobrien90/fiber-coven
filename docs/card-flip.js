@@ -4,9 +4,9 @@ var card3 = document.getElementById("card3");
 
 
 function loadFlip() {
-    setTimeout(flip, 500, card1);
-    setTimeout(flip, 1000, card2);
-    setTimeout(flip, 1500, card3);
+    setTimeout(flip, 1500, card1);
+    setTimeout(flip, 2000, card2);
+    setTimeout(flip, 2500, card3);
 }
 
 function flip(cardNum) {

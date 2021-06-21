@@ -146,11 +146,12 @@ iframe {
 #card1, #card2, #card3 {
     position: relative;
     perspective: 1000px;
-    transition: transform 1s;
+    transition: transform 1.5s;
     transform-style: preserve-3d;
 }
 
 .card-front {
+    -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
 
