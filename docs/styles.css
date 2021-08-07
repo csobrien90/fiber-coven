@@ -16,9 +16,12 @@ Yellow #cb9404
     margin: 0;
     padding: 0;
     list-style: none;
-    background-color: black;
     color: white;
     font-family: Eccentric, 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: black;
 }
 
 h1 {
@@ -56,7 +59,7 @@ nav a, #social-media a {
 }
 
 nav a {
-    transition: border-bottom .1s;
+    transition: border-bottom .3s;
 }
 
 nav a:hover {
@@ -82,13 +85,13 @@ main {
 .content-box {
     flex-grow: 1;
     flex-direction: column;
-    text-align: left;
-    display: block;
     width: 96%;
-    padding: 1em;
-    margin: 5px 10px;
+    margin: 5px 15px;
     flex-basis: 320px;
     text-align: center;
+    border: 3px solid #cb9404;
+    border-radius: 20px;
+    padding: 8px;
 }
 
 .content-box h1 {
@@ -123,7 +126,7 @@ img {
 
 footer {
     text-align: center;
-    padding-bottom: 20px;
+    padding: 20px;
 }
 
 iframe {
@@ -141,31 +144,20 @@ iframe {
     margin-bottom: 2em;
 }
 
-/* card flip animations */
-
-#card1, #card2, #card3 {
-    position: relative;
-    perspective: 1000px;
-    transition: transform 1.5s;
-    transform-style: preserve-3d;
-}
-
 .card-front {
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-    z-index: 100;
-}
-
-.card-back {
-    position: absolute;
-}
-
-.card-front, .card-back {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    display: block;
-    width: 100%;
     height: 100%;
+    padding: 20px 20px 100px;
+    background-image: url("images/tarot-back.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.sizer {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 
@@ -211,19 +203,14 @@ iframe {
 
     .content-box {
         flex-direction: row;
-        flex: 1;
-        vertical-align: top;
         width: 30%;
-        border-radius: 6%;
-        padding: 20px 20px 40px;
-        margin: 5px;
         flex-basis: 400px;
         font-size: 1.2em;
     }
 
     .bio {
         display: unset;
-        text-align: justify;
+        text-align: left;
     }
     
     .bio img {
@@ -243,15 +230,6 @@ iframe {
 
     .bio p:last-child, .bio img:last-child {
         margin-top: 40px;
-    }
-
-    /* card flip animations */
-
-    .card-front, .card-back {
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        width: 100%;
-        height: 100%;
     }
 
 }

@@ -5,10 +5,9 @@
         <title>Fiber Coven</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
-        <script src="card-flip.js" defer></script>
     </head>
     
-    <body onload="loadFlip()">
+    <body>
         <div id="wrapper">
             <header>
                 
@@ -34,72 +33,61 @@
             <main>
                 
                 <div class="content-box">
-                    <div class="inner-box" id="card1">
-                        <div class="card-back"><img src="images/tarot-back.jpg" width="100%" style="border-radius: 7%;"></div>
-                        <div class="card-front">
-                            <h1>Fiber Coven</h1>
-                            <section class="bio">
-                                <img src="images/emily-profile.jpg" id="emily">
-                                <p>Emily O’Brien has been knitting since she was 12 years old. Emily went to school for theatre design but 
-                                    ended up putting those design skills into knitwear instead! Emily focuses on creating patterns that are 
-                                    not just beautiful finished objects but also really fun and addicting to knit. She has been featured in 
-                                    Knit Picks Collections, Interweave, I Like Knitting, Knit Now, and has popular self-published patterns. 
-                                    Emily lives in Louisville, KY with her husband Chad and a menagerie of 1 dog, 3 cats, 6 chickens, 1 rabbit, 
-                                    and about 20,000 honeybees. Aside from yarn, Emily loves both kitties and cupcakes.</p>
-                            </section>
-                            <section class="bio">
-                                <img src="images/lauren-profile.jpg" id="lauren">
-                                <p>Lauren has been a knitter and crafter for 20+ years. She went to college for Clinical Nutrition at UC, 
-                                    Davis and then became disillusioned with the medical profession.  Next, she went to culinary school and 
-                                    cooked for several years until she became disillusioned with that profession too.  She is much happier 
-                                    cooking yarn and fiber in her kitchen in her yarn-hovel in the mountains.  Valkyrie Fibers specializes in 
-                                    self striping sock yarn and Lauren’s colorways are inspired by nature and pop culture.  In her free time, 
-                                    Lauren likes yelling in the streets when human rights are infringed upon, (legally) smoking weed, and 
-                                    petting kittens. 
-                                </p>
-                            </section>
-                        </div>
+                    <div class="card-front">
+                        <h1>Fiber Coven</h1>
+                        <section class="bio">
+                            <p>Emily O’Brien has been knitting since she was 12 years old. Emily went to school for theatre design but 
+                                ended up putting those design skills into knitwear instead! Emily focuses on creating patterns that are 
+                                not just beautiful finished objects but also really fun and addicting to knit. She has been featured in 
+                                Knit Picks Collections, Interweave, I Like Knitting, Knit Now, and has popular self-published patterns. 
+                                Emily lives in Louisville, KY with her husband Chad and a menagerie of 1 dog, 3 cats, 6 chickens, 1 rabbit, 
+                                and about 20,000 honeybees. Aside from yarn, Emily loves both kitties and cupcakes.</p>
+                        </section>
+                        <section class="bio">
+                            <img src="images/lauren-profile.jpg" id="lauren">
+                            <p>Lauren has been a knitter and crafter for 20+ years. She went to college for Clinical Nutrition at UC, 
+                                Davis and then became disillusioned with the medical profession.  Next, she went to culinary school and 
+                                cooked for several years until she became disillusioned with that profession too.  She is much happier 
+                                cooking yarn and fiber in her kitchen in her yarn-hovel in the mountains.  Valkyrie Fibers specializes in 
+                                self striping sock yarn and Lauren’s colorways are inspired by nature and pop culture.  In her free time, 
+                                Lauren likes yelling in the streets when human rights are infringed upon, (legally) smoking weed, and 
+                                petting kittens. 
+                            </p>
+                        </section>
                     </div>
                 </div>
                 
                 <div class="content-box">
-                    <div class="inner-box" id="card2">
-                        <div class="card-back"><img src="images/tarot-back.jpg" width="100%" style="border-radius: 7%;"></div>
-                        <div class="card-front">
-                            <h1>Podcast</h1>
-                            <section>
-                                <p>A weekly witchy themed fiber arts podcast! We’re a coven of two yarn witches trying to craft fiber 
-                                    magic through knitting, dyeing, spinning, and whatever we can get our witchy hands on. It’s a long 
-                                    distance coven, so we thought we’d open it up to yarn witches across the globe so we can spread our 
-                                    black magics far and wide. Lauren is the dyer behind Valkyrie Fibers and Emily designs knitting patterns 
-                                    under the name Kitty With A Cupcake. New episodes drop on Tuesdays!</p>
-                            </section>
-                            
-                            <div id="iframe-wrap">
-                                <iframe title="Fiber Coven Podcast" allowtransparency="true" height="250" width="100%" style="border: none; min-width: min(100%, 430px);" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?i=r783h-992dd5-pbblog-playlist&share=1&download=1&rtl=0&fonts=Arial&skin=2&order=episodic&limit=10&filter=all&ss=a713390a017602015775e868a2cf26b0&btn-skin=3&size=315" allowfullscreen=""></iframe>                    <section>
-                            </div>
-                            
-                            <section style="display: none;">
-                                <p>[Spotify, Apple Podcasts, Google Podcasts buttons]</p>
-                            </section>
+                    <div class="card-front">
+                        <h1>Podcast</h1>
+                        <section>
+                            <p>A weekly witchy themed fiber arts podcast! We’re a coven of two yarn witches trying to craft fiber 
+                                magic through knitting, dyeing, spinning, and whatever we can get our witchy hands on. It’s a long 
+                                distance coven, so we thought we’d open it up to yarn witches across the globe so we can spread our 
+                                black magics far and wide. Lauren is the dyer behind Valkyrie Fibers and Emily designs knitting patterns 
+                                under the name Kitty With A Cupcake. New episodes drop on Tuesdays!</p>
+                        </section>
+                        
+                        <div id="iframe-wrap">
+                            <iframe title="Fiber Coven Podcast" allowtransparency="true" height="250" width="100%" style="border: none; min-width: min(100%, 430px);" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?i=r783h-992dd5-pbblog-playlist&share=1&download=1&rtl=0&fonts=Arial&skin=2&order=episodic&limit=10&filter=all&ss=a713390a017602015775e868a2cf26b0&btn-skin=3&size=315" allowfullscreen=""></iframe>                    <section>
                         </div>
+                        
+                        <section style="display: none;">
+                            <p>[Spotify, Apple Podcasts, Google Podcasts buttons]</p>
+                        </section>
                     </div>
                 </div>
                 
                 <div class="content-box" id="news">
-                    <div class="inner-box" id="card3">
-                        <div class="card-back"><img src="images/tarot-back.jpg" width="100%" style="border-radius: 7%;"></div>
-                        <div class="card-front">
-                            <h1>News</h1>
-                            <img src="images/StripesInSpaceMKAL.jpg">
-                            <p>Inspired by fashions from a long time ago in a galaxy far, far away, this modular shawl is 
-                                the perfect accessory for a hyperspace journey. The shape is a take on a triangle shawl but 
-                                uses modular techniques to show off a self striping yarn and make the shape easier to wear. 
-                                Grab a coordinating tonal, solid, or speckle yarn to pair with your self striping yarn and create 
-                                an out of this world shawl. The sha
-                                wl features a clean modern look that would be at home on any starship.
-                            </p>
-                        </div>
+                    <div class="card-front">
+                        <h1>News</h1>
+                        <img src="images/StripesInSpaceMKAL.jpg">
+                        <p>Inspired by fashions from a long time ago in a galaxy far, far away, this modular shawl is 
+                            the perfect accessory for a hyperspace journey. The shape is a take on a triangle shawl but 
+                            uses modular techniques to show off a self striping yarn and make the shape easier to wear. 
+                            Grab a coordinating tonal, solid, or speckle yarn to pair with your self striping yarn and create 
+                            an out of this world shawl. The shawl features a clean modern look that would be at home on any starship.
+                        </p>
                     </div>
                 </div>
                 
@@ -107,11 +95,16 @@
             
             <footer>
                 <div id="subscribe"></div>
-                <p id="copyright">&copy Copyright 2021 - Fiber Coven</p>
+                <p id="copyright"></p>
             </footer>
 
         </div>
 
+        <script>
+            const copyright = document.getElementById("copyright");
+            var year = new Date().getFullYear(); 
+            copyright.innerHTML = `&copy Copyright ${year} - Fiber Coven`
+        </script>
 
     </body>
 
