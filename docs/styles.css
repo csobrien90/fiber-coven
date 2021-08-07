@@ -93,6 +93,7 @@ main {
     border: 3px solid #cb9404;
     border-radius: 20px;
     padding: 8px;
+    font-size: 1.2em;
 }
 
 .content-box h1 {
@@ -197,7 +198,6 @@ iframe {
         flex-direction: row;
         width: 30%;
         flex-basis: 400px;
-        font-size: 1.2em;
     }
 
     .bio {
