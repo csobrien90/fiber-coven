@@ -133,6 +133,10 @@ footer {
     padding: 20px;
 }
 
+#copyright {
+    margin-top: 20px;
+}
+
 iframe {
     margin: -1px -2px 0 -10px;
 }
