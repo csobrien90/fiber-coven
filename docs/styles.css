@@ -163,6 +163,26 @@ iframe {
     background-repeat: no-repeat; */
 }
 
+.listen-icons {
+    margin-top: 30px;
+    display: flex;
+}
+
+.listen-icons a {
+    padding: 15px;
+    flex: 1;
+}
+
+.listen-icons img {
+    border-radius: 50%;
+    background-color: black;
+}
+
+.listen-icons img:hover {
+    filter: invert(1);
+    transition: filter, .3s;
+}
+
 
 /* Media Queries */
 
