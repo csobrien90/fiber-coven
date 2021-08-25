@@ -112,6 +112,19 @@ main {
     margin: 0 auto;
 }
 
+.content-box a {
+    font-family: Advent Pro, sans-serif;
+}
+
+.content-box a:hover {
+    color: #cb9404;
+}
+
+.show-notes {
+    font-size: 1.3em;
+    padding: 0 15px;
+}
+
 img {
     max-width: 100%;
 }
