@@ -11,7 +11,10 @@ Yellow #cb9404
     src: url(fonts/eccentric.otf);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&display=swap');
+@font-face {
+    font-family: Advent Pro;
+    src: url(fonts/AdventPro-Light.ttf);
+}
 
 * {
     box-sizing: border-box;
@@ -104,7 +107,7 @@ main {
 }
 
 .content-box p {
-    font-family: 'Advent Pro', sans-serif;
+    font-family: Advent Pro, sans-serif;
     max-width: 96%;
     margin: 0 auto;
 }
