@@ -166,6 +166,7 @@ iframe {
 
 #news img {
     margin-bottom: 2em;
+    max-width: 90%;
 }
 
 .card-front {
